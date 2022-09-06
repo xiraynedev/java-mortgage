@@ -21,4 +21,14 @@ git clone https://github.com/xiraynedev/java-mortgage-calculator.git
 cd java-mortgage-calculator
 ```
 
-3.
+3. Run:
+
+```
+mvn package
+```
+
+4. Start the project:
+
+```
+java -cp target/java-mortgage-calculator-1.0-SNAPSHOT.jar com.xiraynedev.app.App
+```
