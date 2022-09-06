@@ -5,7 +5,7 @@
 
 The Java mortgage calculator prompts users for the principal amount of a loan, the annual interest rate, and the loan period. It then calculates the monthly payments until $0 is due.
 
-(Be sure to have openjdk 11.0.16 and Apache Maven 3.6.3 installed on your system before trying the installation instructions below.)
+(Be sure to have `openjdk 11.0.16` and `Apache Maven 3.6.3` installed on your system before trying the installation instructions below.)
 
 ![project screenshot](assets/project-screenshot.webp)
 
