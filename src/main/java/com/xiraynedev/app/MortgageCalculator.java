@@ -22,15 +22,15 @@ public class MortgageCalculator {
         }
 
         private void getPrincipal() {
-                principal = (int) (Console.getUserInput("Principal ($1K - $1M): ", 1000, 1_000_000));
+                principal = (int) (Console.getUserInput("Principal ($1K - $1M): ", 1000.0, 1_000_000.0));
         }
 
         private void getAnnualInterestRate() {
-                annualInterestRate = (float) (Console.getUserInput("Annual Interest Rate (1.0 - 30.0): ", 0, 30));
+                annualInterestRate = (float) (Console.getUserInput("Annual Interest Rate (1.0 - 30.0): ", 1.0, 30.0));
         }
 
         private void getLoanPeriod() {
-                loanPeriod = (byte) (Console.getUserInput("Loan Period (Years) 1 - 30: ", 0, 30));
+                loanPeriod = (byte) (Console.getUserInput("Loan Period (Years) 1 - 30: ", 1.0, 30.0));
         }
 
         private void calculateMortgage() {
