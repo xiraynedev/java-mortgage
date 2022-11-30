@@ -7,7 +7,7 @@ The Java mortgage calculator prompts users for the principal amount of a loan, t
 
 (Be sure to have `openjdk 11.0.16` and `Apache Maven 3.6.3` installed on your system before trying the installation instructions below.)
 
-![project screenshot](assets/project-screenshot.webp)
+![application screenshot](assets/application-screenshot.webp)
 
 ## Installation Instructions
 
@@ -29,7 +29,7 @@ cd java-mortgage-calculator
 mvn package
 ```
 
-4. Start the project:
+4. Start the application:
 
 ```
 java -cp target/java-mortgage-calculator-1.0-SNAPSHOT.jar com.xiraynedev.app.App
