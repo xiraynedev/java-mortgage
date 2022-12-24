@@ -13,7 +13,7 @@ public abstract class MortgageReport {
                 System.out.println("Monthly Payments: " + formattedMortgage);
         }
 
-        public static void printPaymentSchedule(ArrayList balance) {
+        public static void printPaymentSchedule(ArrayList<Double> balance) {
                 System.out.println("----------------");
                 System.out.println("PAYMENT SCHEDULE");
                 for (Object value : balance) {

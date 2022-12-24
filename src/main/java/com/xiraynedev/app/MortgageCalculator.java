@@ -1,6 +1,7 @@
 package com.xiraynedev.app;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MortgageCalculator {
         private int principal;
@@ -9,16 +10,29 @@ public class MortgageCalculator {
         private float monthlyInterestRate;
         private short numberOfPayments;
         private double mortgage;
-        private ArrayList balance = new ArrayList();
+        private ArrayList<Double> balance = new ArrayList<>();
 
-        public MortgageCalculator() {
-                getPrincipal();
-                getAnnualInterestRate();
-                getLoanPeriod();
-                calculateMortgage();
-                calculateBalance();
-                MortgageReport.printMortgage(mortgage);
-                MortgageReport.printPaymentSchedule(balance);
+        public void startCalculator() {
+                Scanner scanner = new Scanner(System.in);
+
+                while (true) {
+                        System.out.println();
+                        System.out.print(
+                                        "--Mortgage Calculator-- Type any character and press enter. Enter q to quit: ");
+                        String response = scanner.nextLine().toLowerCase();
+                        if (response.charAt(0) == 'q' && response.length() == 1) {
+                                break;
+                        }
+                        getPrincipal();
+                        getAnnualInterestRate();
+                        getLoanPeriod();
+                        calculateMortgage();
+                        calculateBalance();
+                        MortgageReport.printMortgage(mortgage);
+                        MortgageReport.printPaymentSchedule(balance);
+                        balance.clear();
+                }
+                scanner.close();
         }
 
         private void getPrincipal() {
